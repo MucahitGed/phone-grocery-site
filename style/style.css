@@ -1,0 +1,317 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.first-page{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+.header{
+    position: fixed;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    height: 10vh;
+}
+.header-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.company-name{
+    font-size: 4rem;
+    font-size: bold;
+}
+.phone-name{
+    font-size: 2rem;
+    font-weight: bold;
+    align-self: center;
+    margin-top: 1rem;
+}
+.buyBtn{
+    height: 4.5rem;
+    width: 120px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--light);
+    border: none;
+    border-radius: 15px;
+}
+.buyBtn:hover{
+    transform: scale(.95);
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+.slogan{    
+    position: absolute;
+    left: 30rem;
+    margin-top: 5rem;
+}
+.slogan h1{
+    font-size: 10rem;
+    margin-top: 2rem;
+}
+/* second page*/
+.second-page{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+    background: var(--light);
+    width: 100%;
+}
+.second-page img{
+    height: 1050px;
+    width: 70%;
+}
+.video{
+    position: absolute;
+    top: 29rem;
+    left: 65rem;
+    height: 250px;
+    
+}
+.myVideo{
+    position: absolute;
+    border-radius: 40px;
+    height: 350px;
+}
+.button-con{
+    position: absolute;
+    bottom: 15rem;
+    background: transparent;
+    align-self: center;
+    width: 60px;
+    height: 60px;
+    justify-self: center;
+    border: 4px solid black;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px black;
+}
+.button-con:hover{
+    transform: scale(.98);
+}
+.pauseBtn{  
+    cursor: pointer;
+    background: transparent;
+    padding: 10px;
+    padding-left: 17.5px;
+}
+.pauseBtn i{  
+    font-size: 32px;
+}
+.second-header{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.second-header .hello{
+    position: absolute;
+    font-size: 10rem;
+    top: 30rem;
+    left: 30rem;
+    font-weight: 1000;
+    background-image: linear-gradient(to right , #a8a8a8 , #dcdcdc , #a9a9a9);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.second-header .quality{
+    position: absolute;
+    top: 40rem;
+    left: 140rem;
+    font-size: 10rem;
+    font-weight: 1000;
+    background-image: linear-gradient(to right , #a8a8a8 , #dcdcdc , #a9a9a9);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.box{
+    transform: translateX(400%);
+    transition: transform 1s ease-out;
+}
+.box:nth-last-of-type(even){
+    transform: translateX(-400%);
+  }
+  .box.show{
+    transform: translateX(0);
+  }  
+  /* third-page */
+  .third-page{
+    margin-top: 5.7rem;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--darkbg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .set-con{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 4fr;
+    margin-left: 30rem;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    width: 90%;
+    height: 60vh;
+}
+  .set{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: #fff;
+  }
+  .set-name{
+    height: 10px;
+    width: 500px;
+    font-size: 30px;
+    color: silver;
+    margin-top: 2.5rem;
+  }
+  .set{
+    background-position: center;
+    background-size: cover;
+  }
+  .setup{
+    background-image: url("../img/logo.jpg");
+  }
+  .ram{
+    background-image: url("../img/ram3.jpg");
+  }
+  .quantum{
+    background-image: url("../img/quad2.jpg");
+  }
+  .screen{
+    background-image: url("../img/4k.jpg");
+  }
+  .battery{
+    background-image: url("../img/battery1.jpg");
+  }
+  .logo1{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 1000;
+    background-color: #585858;
+    color: var(--shineGreen);
+}
+    .logo-name{
+        font-size: 32px;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo-name .span2{
+        font-size: 32px;
+    }
+.span{
+    font-size: 32px;
+}
+/* footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--greybg);
+}
+.footer-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    height: 100px;
+}
+.parag{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+}
+.parag i{
+    font-size: 2rem;
+    padding: 10px;
+    border: 2px solid var(--light);
+    border-radius: 50%;
+    color: var(--light);
+    cursor: pointer;
+}
+.parag p{
+    color: var(--light);
+    font-size: 1.8rem;
+    margin-left: 10px;
+}
+.phone i:hover{
+    color: lightgreen;
+    border: 2px solid lightgreen;
+}
+.map i:hover{
+    color: yellow;
+    border: 2px solid yellow;
+}
+.social{
+    display: flex;
+}
+.social i{
+    color: white;
+    cursor: pointer;
+}
+.social .y:hover{
+    color: red;
+}
+.social .t:hover{
+    color: #1DA1F2;
+}
+.social .f:hover{
+    color: #3b5998;
+}
+.social .l:hover{
+    color: #0072b1;
+}
+
+
+.social a{
+    margin-left: 20px;
+    font-size: 1.6rem;
+}
+footer i{
+    color: #fff;
+}
+.foot{
+    align-self: center;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}

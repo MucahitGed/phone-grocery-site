@@ -1,0 +1,100 @@
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mobile-width: 70rem;
+  --mobile-height: 60rem;
+  --separator-height: 90rem;
+  --bg: #fff;
+  --mobile-bg: #fff;
+  --intro-bg: #fff;
+  --font-color: #000;
+  --transition: transform 0.7s ease-in-out;
+}
+
+.container {
+  min-height: 60vh;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+
+.info {
+  font-size: 32px;
+  margin-top: 10px;
+  color: var(--font-color);
+}
+
+.mobile-layout {
+  height: var(--mobile-height);
+  border-radius: var(--mobile-radius);
+  overflow: hidden;
+  width: 75rem;
+  color: var(--font-color);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mobile-layout .book-cover {
+  position: relative;
+  height: var(--separator-height);
+  width: 100%;
+  background-color: var(--intro-bg);
+  transform-style: preserve-3d;
+  transform-origin: 50% 40%;
+  transition: var(--transition);
+  z-index: 4;
+  background: transparent;
+}
+.mobile-layout .book-top {
+  width: 100%;
+  position: absolute;
+  height: 77.5vh;
+  z-index: 5;
+  transform: translateZ(28.5px);
+}
+.mobile-layout .book-cover:hover {
+  transform: rotateX(75deg) translateZ(3px) scale(0.75);
+}
+.mobile-layout .book-cover:hover + .preface {
+  transform: translateY(-130px);
+}
+.mobile-layout .book-cover:hover + .preface .icon {
+  transform: rotateX(180deg);
+}
+.mobile-layout .preface {
+  height: var(--separator-height);
+  width: 70%;
+  transition: var(--transition);
+  background: transparent;
+}
+.mobile-layout .preface .header1 {
+  display: flex;
+  align-items: center;
+}
+.mobile-layout .preface .title {
+  font-size: 5rem;
+  align-self: center;
+  justify-self: center;
+  font-weight: bold;
+}
+.mobile-layout .preface .body {
+  margin-top: 3rem;
+}
+.mobile-layout .preface .body p {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.mobile-layout .preface .author {
+  margin-bottom: 20px;
+}
+.mobile-layout .preface .body p:first-child {
+  margin-bottom: 15px;
+}/*# sourceMappingURL=anime.css.map */

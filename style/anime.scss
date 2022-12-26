@@ -1,0 +1,108 @@
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --mobile-width: 70rem;
+  --mobile-height: 60rem;
+  --separator-height: 90rem;
+  --bg: #fff;
+  --mobile-bg: #fff;
+  --intro-bg: #fff;
+  --font-color: #000;
+  --transition: transform 0.7s ease-in-out;
+}
+
+.container {
+  min-height: 60vh;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+
+.info {
+  font-size: 32px;
+  margin-top: 10px;
+  color: var(--font-color);
+}
+
+.mobile-layout {
+  height: var(--mobile-height);
+  border-radius: var(--mobile-radius);
+  overflow: hidden;
+  width: 75rem;
+  color: var(--font-color);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  .book-cover {
+    position: relative;
+    height: var(--separator-height);
+    width: 100%;
+    background-color: var(--intro-bg);
+    transform-style: preserve-3d;
+    transform-origin: 50% 40%;
+    transition: var(--transition);
+    z-index: 4;
+    background: transparent;
+  }
+  
+  .book-top {
+    width: 100%;
+    position: absolute;
+    height: 77.5vh;
+    z-index: 5;
+    transform: translateZ(28.5px);
+  }
+ 
+  .book-cover:hover {
+    transform: rotateX(75deg) translateZ(3px) scale(0.75);
+  }
+
+  .book-cover:hover + .preface {
+    transform: translateY(-130px);
+    .icon {
+      transform: rotateX(180deg);
+    }
+  }
+  
+  .preface {
+    height: var(--separator-height);
+    width: 70%;
+    transition: var(--transition);//cubic-bezier(1,.98,.82,.98);
+    background: transparent;
+
+      .header1 {
+        display: flex;
+        align-items: center;
+      }
+
+      .title {
+        font-size: 5rem;
+        
+        align-self: center;
+        justify-self: center;
+        font-weight: bold;
+      }
+      .body{
+        margin-top: 3rem;
+      }
+      .body p{
+        font-size: 2rem;
+        margin-top: 1rem;
+      }
+      .author {
+        margin-bottom: 20px;
+      }
+      .body p:first-child {
+        margin-bottom: 15px;
+      }
+  }
+}

@@ -1,0 +1,40 @@
+.wrapper-bg { 
+background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3); 
+  background-size: 1800% 1800%;
+  -webkit-animation: rainbow 10s ease infinite;
+  -z-animation: rainbow 10s ease infinite;
+  -o-animation: rainbow 10s ease infinite;
+    animation: rainbow 10s ease infinite;
+}
+.wrapper{
+    background-image: linear-gradient(to left, var(--blue), var(--shineGreen), var(--green));   
+    -webkit-background-clip: text;
+    color: transparent;
+    /* animation: changer 3s infinite; */
+}
+@keyframes changer{
+    0%{background-image: linear-gradient(to left, var(--blue), var(--shineGreen), var(--green))}
+    50%{background-image: linear-gradient(to left, var(--blue),var(--green) ,var(--shineGreen))}
+    100%{background-image: linear-gradient(to left,var(--green) ,var(--blue), var(--shineGreen))}
+}
+
+  @-webkit-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-moz-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @-o-keyframes rainbow {
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
+  @keyframes rainbow { 
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+  }
